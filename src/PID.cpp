@@ -2,7 +2,7 @@
 #include <iostream>
 
 /*
-* TODO: Complete the PID class.
+* The PID class.
 */
 
 PID::PID() { bTwittleEnabled = false; }
@@ -87,12 +87,11 @@ pid::return_code PID::UpdateError(double cte, bool crash) {
     // exit condition is the sum of potentials
     if (sum_dp > threshold_) {
 
-      if (step_ == 1 && state_ == pid::twiddle_state::INIT) // first run = no changes
+      if (step_ == 1 &&
+          state_ == pid::twiddle_state::INIT) // first run = no changes
       {
         PrintCurrentGains();
-      }
-      else if (step_ == 1 && state_ == pid::twiddle_state::INDEX) 
-      {
+      } else if (step_ == 1 && state_ == pid::twiddle_state::INDEX) {
         gains_[index_] += potentials_[index_];
         PrintCurrentGains();
         state_ = pid::twiddle_state::INCREMENT;
