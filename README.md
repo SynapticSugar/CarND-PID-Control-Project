@@ -2,6 +2,112 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## Introduction
+
+In this project we revisit the lake race track from the Behavioral Cloning Project.This time, however, I implement a PID controller in C++ to maneuver the vehicle around the track!
+
+The simulator provides the cross track error (CTE) and the velocity (mph) in order to compute the appropriate steering angle and velocity control of the car.
+The speed limit has been increased from 30 mph to 100 mph so the objective is to try to drive SAFELY as fast as possible! NOTE: There is no minimum speed to pass.
+
+## Implementation
+
+The car steering PID controller follows the base implementation taught in class consiting of a proportional, integral, and derivative component.  It was coded in C++ and is located in the files ```PID.h``` and ```PID.cpp```.  The PID gains were tuned manually following well established tuning methods stated [here](https://robotics.stackexchange.com/questions/167/what-are-good-strategies-for-tuning-pid-loops).  Once the car could safely navigate around the track, a Twiddle algorithm was then applied to improve upon it as it drives the total error to zero.
+
+![alt text](./Term2PID.png "PID Steering Controller")
+
+The car throttle control was implemented with a PID controller as well.  The gains were manually tuned and the Twiddle algorithm applied to fine tune it.  Surprisingly, it settled on a controller that did not use the I term which resulted in a PD controller, a special case of the PID controller where I is set to zero.
+
+See https://en.wikipedia.org/wiki/PID_controller for more information.
+
+## Reflection
+
+The following section describes the effect of each term on the implementation.
+
+### Proportional Effect
+
+The proportional effect is simply a gain factor applied to the error between desired and actual measured value.  As the error increases the proportional term increases in the opposite direction to counteract the error.
+
+The effect of a single proportional term is shown in the plots below:
+
+![alt text](./pid_0.07_0_0.png "PID 0.07_0_0")
+
+Here the line in blue shows the cross track error over time (steps). This is a P only controller with D and I terms set to zero.  It can be seen that as the cte term increases, so does the proportional term shown in red.  The final result is an error value equal to the proportional but in the opposite direction to counteract the cross track error.
+
+
+![alt text](./pid_0.17_0_0.png "PID 0.17_0_0")
+
+The effect of turning up the gain is quite dramatic and leads to larger occilations in the cross track error. This leads to an unstable condition and does not handle varying inputs very well.  A high proportional term makes the system more sensitive to error but becomes unbounded as error grows.  The effect is decreased response time, increased overshoot, decreased steady state error, and a degredation in stability.
+
+Lowering the P term too much can also have bad effects where the car will fail to counteract the error leading to it not being sensititve to changes in the road curvature. It does not applify the error like the very large proportional term above, but it will also fail to handle the corners and bends in the road.
+
+
+### Differential Effect
+
+The effects of the differential term are emphasized in the plots below:
+
+![alt text](./pid_0.07_0_0.12.png "PID 0.07_0_0.12")
+
+Here the derivative term works against the proportional term when the error term is changing rapidly. Therefore increasing the D term will necesstate a corresponding increase in the P term.  Here the D term helps with the oscillation in the P term but induces a steady state error in the cross track error but the controller is generally stable.
+
+![alt text](./pid_0.07_0_1.png "PID 0.07_0_1")
+
+Increasing the D term too much causes the controller to go unstable as seen in plot above.  The effect is a decrease in overshoot, an increase in the time it takes to settle (ringing) as seen in the bell shape occilations.  The bells are growing over time which is sign that this D term will cause more instability over time.
+
+### Integral Effect
+
+The effects of modifying the integral term are shown in the plots below:
+
+![alt text](./pid_0.07_1e-4_0.12.png "PID 0.07_1e-4_0.12")
+
+Here is a fully tuned PID controller with an small I term applied.  The I term integrates the error over time and applies it to the control output.  Notice how the blue cross track error is now brough to the center of the plot.  This is because the I term reduces steady state error.  Since this an 'area' function, the term must be small or risk the controller beciming unstable.  This cumulative effect will reduce the steady state error but requires error on the opposite side of the graph to pull it back down to zero.
+
+![alt text](./pid_0.07_1e-1_0.12.png "PID 0.07_1e-1_0.12")
+
+Increasing the I term leads to unstability as seen in the above plot where the integral term is set to 0.1.  Here it can be seen that as the cross track error increases so does the I term. The effect is a decrease in rise time, and increase in overshooting, and increase in the settling time, a decrease in steady state error and a degredation in stabilty.
+
+### How the Final Hyperparameters Were Chosen
+
+To get the final hyperparameters or P, I, D gains, I used a combination of manual tuning and Twiddle.
+
+I initially set the throttle to .3 and manually tuned the P, I, D following the methods described [here](https://robotics.stackexchange.com/questions/167/what-are-good-strategies-for-tuning-pid-loops) and in the document [here](https://udacity-reviews-uploads.s3.amazonaws.com/_attachments/41330/1493863065/pid_control_document.pdf).
+1. I set all the terms to zero and gradually increased P until I could make the first corner without flying off or oscillating out of control.  When the occillations increased too much I lowered it until they stoped increasing.
+2. I then set D to a very small value and gradually increased it until the overshooting around the second an thrid corners was resolved.
+3. Finally I set the I term from a very small amount 1e-5 to reduce the steady state error.  By this time the car was able to traverse a complete lap of the track.
+
+I noticed that if I changed the throttle to 0.4, the P, I, D, terms were no longer valid and the car lost control.  The PID terms are dependant on the cars velocity.  This makes sense because as the car travels faster, more subtle changes are required.
+
+At this point, I decided to implement throttle control with a PID controller and only tune for a single speed.
+
+I manually tuned the speed control using the same logic above and it gave decent results. Once this was done, I implemented the Twiddle algorithm to fine tune the steering control.  
+
+My version of the Twiddle algorithm lives in the PID class. It is turned on by specifying it in the initialization function.  The ```main.cpp``` loop listens for a return code from the PID ```UpdateError``` function that is used to signal restarts of the simulation pipeline.
+
+After using the Twiddle algorithm to find the final gains for the 40 kph speed.  I then used Twiddle to fine tune the throttle once again.  After this, I found I needed to run Twiddle once more on the steerign controller to dial it in nicely.
+
+An issue I ran into early on in the process was twitchy turning responses.  It looked like the wheels were twitching back and forth extreamly fast while driving.  When I looked closer at the crosstack erro coming from the simulator itself, I noticed that after every new value, it would send 3 or so repeats of the tsame value.  This was causing the differential D term to fire once and then hold zero for a few updates and then fire again and so on.
+
+To fix this, I added a low pass filter to both the steering cross track error as wel as the velocity feedback.  This helped a lot with the control of the car and stopped the wheels from twitching all the time.
+
+Another issue I had was that a fully tuned PID controller would produce different results from run to run.  I had initially just used the steps as the time increment for the differential control.  This introduced variability becuase the updates did not always occur at the same time interval.  Using ```std::chrono::system_clock``` instead resulted in a big improvement in this phenomina.
+
+After I had a controller tuned for 40 MPH, I decided to tune PID gains for each speed in the range 40, 50, 60, 70, 80, and 90 MPH.  I started the 50 Mph with the same parameters from the previous speed, 40 MPH, and applied the Twiddle algorithm these until it could successfully complete a lap and assigned the vales for this new speed. I repeated this for each speed up to 90 MPH.  At 90 MPH I found the Twiddle algorithm would no longer work as the car could never make the first sharp corner after the bridge.  It should be noted that using a low pass filter on the cross track error results in a time delay between the input and the control. It becomes slower to respond.  This works against tuning the controller for high speed driving.
+
+In the end I was content to settle for ```80 MPH``` as the maximum speed I could attain safely.
+
+## Simulation Results
+
+### The vehicle must successfully drive a lap around the track.
+
+No tire may leave the drivable portion of the track surface. The car may not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle).
+
+### 40 MPH
+
+![alt text](./40mph.gif "40 MPH")
+
+### 80 MPH
+
+![alt text](./80mph.gif "80 MPH")
+
 
 ## Dependencies
 
@@ -59,40 +165,4 @@ More information is only accessible by people who are already enrolled in Term 2
 of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/e8235395-22dd-4b87-88e0-d108c5e5bbf4/concepts/6a4d8d42-6a04-4aa6-b284-1697c0fd6562)
 for instructions and the project rubric.
 
-## Hints!
-
-* You don't have to follow this directory structure, but if you do, your work
-  will span all of the .cpp files here. Keep an eye out for TODOs.
-
-## Call for IDE Profiles Pull Requests
-
-Help your fellow students!
-
-We decided to create Makefiles with cmake to keep this project as platform
-agnostic as possible. Similarly, we omitted IDE profiles in order to we ensure
-that students don't feel pressured to use one IDE or another.
-
-However! I'd love to help people get up and running with their IDEs of choice.
-If you've created a profile for an IDE that you think other students would
-appreciate, we'd love to have you add the requisite profile files and
-instructions to ide_profiles/. For example if you wanted to add a VS Code
-profile, you'd add:
-
-* /ide_profiles/vscode/.vscode
-* /ide_profiles/vscode/README.md
-
-The README should explain what the profile does, how to take advantage of it,
-and how to install it.
-
-Frankly, I've never been involved in a project with multiple IDE profiles
-before. I believe the best way to handle this would be to keep them out of the
-repo root to avoid clutter. My expectation is that most profiles will include
-instructions to copy files to a new location to get picked up by the IDE, but
-that's just a guess.
-
-One last note here: regardless of the IDE used, every submitted project must
-still be compilable with cmake and make./
-
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 

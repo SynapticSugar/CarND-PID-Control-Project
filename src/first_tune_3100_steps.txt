@@ -1,0 +1,1348 @@
+april@Electron:~/term2/CarND-PID-Control-Project/debug$ make
+Scanning dependencies of target pid
+[ 33%] Building CXX object CMakeFiles/pid.dir/src/PID.cpp.o
+[ 66%] Linking CXX executable pid
+[100%] Built target pid
+april@Electron:~/term2/CarND-PID-Control-Project/debug$ ./pid 0.11 1.26 0.0001
+Listening to port 4567
+Connected!!!
+New gains [0.121, 1.26, 0.0001] Index [0] error [1e+09]
+New gains [0.121, 1.386, 0.0001] Index [1] error [1827.32]
+Connected!!!
+New gains [0.121, 1.386, 0.00011] Index [2] error [1814.45]
+Connected!!!
+New gains [0.1331, 1.386, 0.00011] Index [0] error [996.452]
+Connected!!!
+Connected!!!
+New gains [0.121, 1.5246, 0.00011] Index [1] error [996.452]
+Connected!!!
+New gains [0.121, 1.5246, 0.000121] Index [2] error [910.523]
+Connected!!!
+Connected!!!
+New gains [0.13189, 1.5246, 9.9e-05] Index [0] error [910.523]
+Connected!!!
+New gains [0.13189, 1.67706, 9.9e-05] Index [1] error [732.953]
+Connected!!!
+Connected!!!
+New gains [0.13189, 1.5246, 0.0001111] Index [2] error [732.953]
+Connected!!!
+Connected!!!
+New gains [0.143869, 1.5246, 8.69e-05] Index [0] error [732.953]
+Connected!!!
+Connected!!!
+New gains [0.119911, 1.66181, 8.69e-05] Index [1] error [732.953]
+Connected!!!
+New gains [0.119911, 1.66181, 0.00010021] Index [2] error [577.61]
+Connected!!!
+Connected!!!
+New gains [0.133088, 1.66181, 7.359e-05] Index [0] error [577.61]
+Connected!!!
+New gains [0.133088, 1.81275, 7.359e-05] Index [1] error [561.688]
+Connected!!!
+New gains [0.133088, 1.81275, 8.8231e-05] Index [2] error [503.493]
+Connected!!!
+Connected!!!
+New gains [0.147582, 1.81275, 5.8949e-05] Index [0] error [503.493]
+Connected!!!
+Connected!!!
+New gains [0.133088, 1.97878, 5.8949e-05] Index [1] error [503.493]
+Connected!!!
+New gains [0.133088, 1.97878, 7.50541e-05] Index [2] error [487.492]
+Connected!!!
+New gains [0.146133, 1.97878, 7.50541e-05] Index [0] error [477.412]
+Connected!!!
+Connected!!!
+New gains [0.133088, 2.16141, 7.50541e-05] Index [1] error [477.412]
+Connected!!!
+New gains [0.133088, 2.16141, 9.27697e-05] Index [2] error [434.984]
+Connected!!!
+Connected!!!
+New gains [0.144829, 2.16141, 5.73385e-05] Index [0] error [434.984]
+Connected!!!
+New gains [0.144829, 2.36231, 5.73385e-05] Index [1] error [417.546]
+Connected!!!
+New gains [0.144829, 2.36231, 7.68257e-05] Index [2] error [401.643]
+Connected!!!
+Connected!!!
+New gains [0.157743, 2.36231, 3.78513e-05] Index [0] error [401.643]
+Connected!!!
+Connected!!!
+New gains [0.131914, 2.58329, 3.78513e-05] Index [1] error [401.643]
+Connected!!!
+^C
+april@Electron:~/term2/CarND-PID-Control-Project/debug$ ./pid 0.144829 2.36231 0.0000769257
+Listening to port 4567
+Connected!!!
+New gains [0.159312, 2.36231, 7.69257e-05] Index [0] error [1e+09]
+New gains [0.159312, 2.59854, 7.69257e-05] Index [1] error [810.351]
+Connected!!!
+^C
+april@Electron:~/term2/CarND-PID-Control-Project/debug$ make
+Scanning dependencies of target pid
+[ 33%] Building CXX object CMakeFiles/pid.dir/src/PID.cpp.o
+[ 66%] Linking CXX executable pid
+[100%] Built target pid
+april@Electron:~/term2/CarND-PID-Control-Project/debug$ ./pid 0.134829 2.36231 0.0000769257
+Listening to port 4567
+Connected!!!
+New gains [0.148312, 2.36231, 7.69257e-05] Index [0] error [1e+09]
+New gains [0.148312, 2.59854, 7.69257e-05] Index [1] error [38941.3]
+Connected!!!
+New gains [0.148312, 2.59854, 8.46183e-05] Index [2] error [7458.67]
+Connected!!!
+Connected!!!
+New gains [0.163143, 2.59854, 6.92331e-05] Index [0] error [7458.67]
+Connected!!!
+New gains [0.163143, 2.8584, 6.92331e-05] Index [1] error [4555.53]
+Connected!!!
+New gains [0.163143, 2.8584, 7.7695e-05] Index [2] error [3626.06]
+Connected!!!
+Connected!!!
+New gains [0.179457, 2.8584, 6.07713e-05] Index [0] error [3626.06]
+Connected!!!
+New gains [0.179457, 3.14423, 6.07713e-05] Index [1] error [1432.57]
+Connected!!!
+New gains [0.179457, 3.14423, 7.00793e-05] Index [2] error [869.242]
+Connected!!!
+Connected!!!
+New gains [0.197403, 3.14423, 6.07713e-05] Index [0] error [869.242]
+Connected!!!
+New gains [0.197403, 3.45866, 6.07713e-05] Index [1] error [669.178]
+Connected!!!
+New gains [0.197403, 3.45866, 6.91485e-05] Index [2] error [654.25]
+Connected!!!
+Connected!!!
+New gains [0.217143, 3.45866, 6.07713e-05] Index [0] error [654.25]
+Connected!!!
+Connected!!!
+New gains [0.197403, 3.80452, 6.07713e-05] Index [1] error [654.25]
+Connected!!!
+New gains [0.197403, 3.80452, 6.83108e-05] Index [2] error [645.982]
+Connected!!!
+New gains [0.215169, 3.80452, 6.83108e-05] Index [0] error [620.77]
+Connected!!!
+Connected!!!
+New gains [0.197403, 4.18498, 6.83108e-05] Index [1] error [620.77]
+Connected!!!
+New gains [0.197403, 4.18498, 7.66042e-05] Index [2] error [588.018]
+Connected!!!
+Connected!!!
+New gains [0.213393, 4.18498, 6.00174e-05] Index [0] error [588.018]
+Connected!!!
+Connected!!!
+New gains [0.197403, 4.60347, 6.00174e-05] Index [1] error [588.018]
+Connected!!!
+New gains [0.197403, 4.60347, 6.91401e-05] Index [2] error [558.536]
+Connected!!!
+New gains [0.211794, 4.60347, 6.91401e-05] Index [0] error [554.412]
+Connected!!!
+New gains [0.211794, 5.06382, 6.91401e-05] Index [1] error [533.159]
+Connected!!!
+New gains [0.211794, 5.06382, 7.91752e-05] Index [2] error [507.585]
+Connected!!!
+New gains [0.227624, 5.06382, 7.91752e-05] Index [0] error [489.344]
+Connected!!!
+Connected!!!
+New gains [0.211794, 5.5702, 7.91752e-05] Index [1] error [489.344]
+Connected!!!
+Connected!!!
+New gains [0.211794, 5.06382, 9.02138e-05] Index [2] error [489.344]
+Connected!!!
+Connected!!!
+New gains [0.226041, 5.06382, 7.91752e-05] Index [0] error [489.344]
+Connected!!!
+Connected!!!
+New gains [0.211794, 5.51957, 7.91752e-05] Index [1] error [489.344]
+Connected!!!
+New gains [0.211794, 5.51957, 8.91099e-05] Index [2] error [488.737]
+Connected!!!
+Connected!!!
+New gains [0.224616, 5.51957, 6.92405e-05] Index [0] error [488.737]
+Connected!!!
+Connected!!!
+New gains [0.211794, 6.02088, 6.92405e-05] Index [1] error [488.737]
+Connected!!!
+New gains [0.211794, 6.02088, 8.01687e-05] Index [2] error [458.374]
+Connected!!!
+Connected!!!
+New gains [0.223334, 6.02088, 6.92405e-05] Index [0] error [458.374]
+Connected!!!
+Connected!!!
+New gains [0.211794, 6.57233, 6.92405e-05] Index [1] error [458.374]
+Connected!!!
+Connected!!!
+New gains [0.211794, 6.02088, 7.90758e-05] Index [2] error [458.374]
+Connected!!!
+Connected!!!
+New gains [0.22218, 6.02088, 6.92405e-05] Index [0] error [458.374]
+Connected!!!
+New gains [0.22218, 6.51719, 6.92405e-05] Index [1] error [452.72]
+Connected!!!
+New gains [0.22218, 6.51719, 7.80923e-05] Index [2] error [443.872]
+Connected!!!
+Connected!!!
+New gains [0.233604, 6.51719, 6.92405e-05] Index [0] error [443.872]
+Connected!!!
+New gains [0.233604, 7.06312, 6.92405e-05] Index [1] error [431.571]
+Connected!!!
+New gains [0.233604, 7.06312, 7.72071e-05] Index [2] error [427.53]
+Connected!!!
+New gains [0.246171, 7.06312, 7.72071e-05] Index [0] error [422.024]
+Connected!!!
+New gains [0.246171, 7.66365, 7.72071e-05] Index [1] error [420.656]
+Connected!!!
+New gains [0.246171, 7.66365, 8.59704e-05] Index [2] error [404.704]
+Connected!!!
+Connected!!!
+New gains [0.259995, 7.66365, 7.72071e-05] Index [0] error [404.704]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.72071e-05] Index [1] error [404.704]
+Connected!!!
+New gains [0.232348, 8.32424, 8.50941e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.247554, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 9.05088, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.79958e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.246033, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.97821, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.71283e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.244664, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.91281, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.63474e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.243433, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.85396, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.56447e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.242324, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.80098, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.50123e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.241327, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.75331, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.4443e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.240429, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.7104, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.39308e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.239621, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.67179, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.34697e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.238893, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.63703, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.30547e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.238239, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.60575, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.26813e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.23765, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.5776, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.23452e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.237119, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.55226, 6.93202e-05] Index [1] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.232348, 8.32424, 7.20427e-05] Index [2] error [386.619]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 6.93202e-05] Index [0] error [386.619]
+Connected!!!
+New gains [0.236642, 8.52946, 6.93202e-05] Index [1] error [382.709]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.17704e-05] Index [2] error [382.709]
+Connected!!!
+New gains [0.241366, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.50894, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.44657e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.240894, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.49047, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.41962e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.240469, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.47384, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.39536e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.240086, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.45888, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.37353e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.239742, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.44542, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.35388e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.239432, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.4333, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.3362e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.239153, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.42239, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.32028e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.238902, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.41258, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.30596e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.238676, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.40374, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.29307e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.238472, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.39579, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.28146e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.238289, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.38864, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.27102e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.238125, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.3822, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.26162e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237976, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.3764, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.25316e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237843, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.37118, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.24555e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237723, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.36649, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.2387e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237615, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.36226, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.23254e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237518, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.35846, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.22699e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.23743, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.35504, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.22199e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237351, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.35196, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.2175e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.23728, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.34919, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.21345e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237216, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.34669, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.20981e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237159, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.34445, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.20653e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237107, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.34242, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.20358e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237061, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.34061, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.20093e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.237019, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.33897, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.19854e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236981, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.3375, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.19639e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236947, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.33617, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.19446e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236917, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.33498, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.19271e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236889, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.3339, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.19115e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236865, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.33294, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.18974e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236842, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.33207, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236642, 8.32424, 7.18847e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236822, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.33128, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18732e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.23666, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.33058, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.1863e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.23664, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32994, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18537e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236623, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32937, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18454e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236606, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32886, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18379e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236592, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.3284, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18311e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236579, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32798, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18251e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236567, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32761, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18196e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236557, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32727, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18147e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236547, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32697, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18103e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236539, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32669, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18063e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236531, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32645, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.18027e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236524, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32623, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17995e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236518, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32603, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17966e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236512, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32585, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17939e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236507, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32569, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17916e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236503, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32554, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17895e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236499, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32541, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17876e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236495, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32529, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17859e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236492, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32519, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17843e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236489, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32509, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17829e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236486, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32501, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17817e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236484, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32493, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17805e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236481, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32486, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17795e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236479, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.3248, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17786e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236478, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32474, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17778e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236476, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32469, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17771e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236475, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32465, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17764e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236473, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.3246, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17758e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236472, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32457, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17753e-05] Index [2] error [374.549]
+Connected!!!
+New gains [0.236471, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32453, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17748e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.23647, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.3245, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17743e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236469, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32448, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17739e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236469, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32445, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17736e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236468, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32443, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17733e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236467, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32441, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.1773e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236467, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32439, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17727e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236466, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32438, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17725e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236466, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32436, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17723e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236466, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32435, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17721e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236465, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32434, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17719e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236465, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32433, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17718e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236465, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32432, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17716e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236464, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32431, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17715e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236464, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.3243, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17714e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236464, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.3243, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17713e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236464, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32429, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32429, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17704e-05] Index [0] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32428, 7.17704e-05] Index [1] error [374.549]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [374.549]
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32428, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17718e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32427, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17717e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32427, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17717e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32427, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17716e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32426, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17715e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32426, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17715e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32426, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17715e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236463, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32425, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17714e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32425, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17714e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32425, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17714e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32425, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17713e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32425, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17713e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32425, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17713e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32425, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17713e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17712e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [1] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [2] error [362.257]
+Connected!!!
+Connected!!!
+New gains [0.236462, 8.32424, 7.17711e-05] Index [0] error [362.257]
+Connected!!!
+Segmentation fault (core dumped)
+april@Electron:~/term2/CarND-PID-Control-Project/debug$

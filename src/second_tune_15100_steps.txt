@@ -1,0 +1,315 @@
+
+april@Electron:~/term2/CarND-PID-Control-Project/debug$ ./pid 0.236462 8.32424 7.17711e-05
+Listening to port 4567
+Connected!!!
+New gains [0.260108, 8.32424, 7.17711e-05] Index [0] error [1e+09]
+New potentials [0.0236462, 0.832424, 7.17711e-06] Sum potentials_ [0.856077]
+New gains [0.260108, 9.15666, 7.17711e-05] Index [1] error [7607.05]
+New potentials [0.0260108, 0.832424, 7.17711e-06] Sum potentials_ [0.858442]
+Connected!!!
+New gains [0.260108, 9.15666, 7.89482e-05] Index [2] error [3261.19]
+New potentials [0.0260108, 0.915666, 7.17711e-06] Sum potentials_ [0.941684]
+Connected!!!
+Connected!!!
+New gains [0.286119, 9.15666, 6.4594e-05] Index [0] error [3261.19]
+New potentials [0.0260108, 0.915666, 7.89482e-06] Sum potentials_ [0.941685]
+Connected!!!
+New gains [0.286119, 10.0723, 6.4594e-05] Index [1] error [2769.21]
+New potentials [0.0286119, 0.915666, 7.89482e-06] Sum potentials_ [0.944286]
+Connected!!!
+New gains [0.286119, 10.0723, 7.24888e-05] Index [2] error [2693.24]
+New potentials [0.0286119, 1.00723, 7.89482e-06] Sum potentials_ [1.03585]
+Connected!!!
+New gains [0.314731, 10.0723, 7.24888e-05] Index [0] error [2482.94]
+New potentials [0.0286119, 1.00723, 8.6843e-06] Sum potentials_ [1.03585]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.0796, 7.24888e-05] Index [1] error [2482.94]
+New potentials [0.0257507, 1.00723, 8.6843e-06] Sum potentials_ [1.03299]
+Connected!!!
+Connected!!!
+New gains [0.286119, 10.0723, 8.11731e-05] Index [2] error [2482.94]
+New potentials [0.0257507, 0.90651, 8.6843e-06] Sum potentials_ [0.932269]
+Connected!!!
+Connected!!!
+New gains [0.31187, 10.0723, 7.24888e-05] Index [0] error [2482.94]
+New potentials [0.0257507, 0.90651, 7.81587e-06] Sum potentials_ [0.932268]
+Connected!!!
+Connected!!!
+New gains [0.286119, 10.9788, 7.24888e-05] Index [1] error [2482.94]
+New potentials [0.0231756, 0.90651, 7.81587e-06] Sum potentials_ [0.929693]
+Connected!!!
+New gains [0.286119, 10.9788, 8.03047e-05] Index [2] error [2203.34]
+New potentials [0.0231756, 0.997161, 7.81587e-06] Sum potentials_ [1.02034]
+Connected!!!
+Connected!!!
+New gains [0.309295, 10.9788, 7.24888e-05] Index [0] error [2203.34]
+New potentials [0.0231756, 0.997161, 7.03429e-06] Sum potentials_ [1.02034]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.976, 7.24888e-05] Index [1] error [2203.34]
+New potentials [0.0208581, 0.997161, 7.03429e-06] Sum potentials_ [1.01803]
+Connected!!!
+Connected!!!
+New gains [0.286119, 10.9788, 7.95231e-05] Index [2] error [2203.34]
+New potentials [0.0208581, 0.897445, 7.03429e-06] Sum potentials_ [0.91831]
+Connected!!!
+Connected!!!
+New gains [0.306977, 10.9788, 7.24888e-05] Index [0] error [2203.34]
+New potentials [0.0208581, 0.897445, 6.33086e-06] Sum potentials_ [0.918309]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.8763, 7.24888e-05] Index [1] error [2203.34]
+New potentials [0.0187723, 0.897445, 6.33086e-06] Sum potentials_ [0.916223]
+Connected!!!
+Connected!!!
+New gains [0.286119, 10.9788, 7.88197e-05] Index [2] error [2203.34]
+New potentials [0.0187723, 0.8077, 6.33086e-06] Sum potentials_ [0.826479]
+Connected!!!
+Connected!!!
+New gains [0.304891, 10.9788, 7.24888e-05] Index [0] error [2203.34]
+New potentials [0.0187723, 0.8077, 5.69777e-06] Sum potentials_ [0.826478]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.7865, 7.24888e-05] Index [1] error [2203.34]
+New potentials [0.016895, 0.8077, 5.69777e-06] Sum potentials_ [0.824601]
+Connected!!!
+New gains [0.286119, 11.7865, 7.81866e-05] Index [2] error [2182.8]
+New potentials [0.016895, 0.88847, 5.69777e-06] Sum potentials_ [0.905371]
+Connected!!!
+Connected!!!
+New gains [0.303014, 11.7865, 7.24888e-05] Index [0] error [2182.8]
+New potentials [0.016895, 0.88847, 5.12799e-06] Sum potentials_ [0.90537]
+Connected!!!
+Connected!!!
+New gains [0.286119, 12.675, 7.24888e-05] Index [1] error [2182.8]
+New potentials [0.0152055, 0.88847, 5.12799e-06] Sum potentials_ [0.903681]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.7865, 7.76168e-05] Index [2] error [2182.8]
+New potentials [0.0152055, 0.799623, 5.12799e-06] Sum potentials_ [0.814834]
+Connected!!!
+Connected!!!
+New gains [0.301325, 11.7865, 7.24888e-05] Index [0] error [2182.8]
+New potentials [0.0152055, 0.799623, 4.61519e-06] Sum potentials_ [0.814833]
+Connected!!!
+Connected!!!
+New gains [0.286119, 12.5862, 7.24888e-05] Index [1] error [2182.8]
+New potentials [0.013685, 0.799623, 4.61519e-06] Sum potentials_ [0.813313]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.7865, 7.7104e-05] Index [2] error [2182.8]
+New potentials [0.013685, 0.719661, 4.61519e-06] Sum potentials_ [0.73335]
+Connected!!!
+Connected!!!
+New gains [0.299804, 11.7865, 7.24888e-05] Index [0] error [2182.8]
+New potentials [0.013685, 0.719661, 4.15368e-06] Sum potentials_ [0.73335]
+Connected!!!
+Connected!!!
+New gains [0.286119, 12.5062, 7.24888e-05] Index [1] error [2182.8]
+New potentials [0.0123165, 0.719661, 4.15368e-06] Sum potentials_ [0.731981]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.7865, 7.66425e-05] Index [2] error [2182.8]
+New potentials [0.0123165, 0.647695, 4.15368e-06] Sum potentials_ [0.660015]
+Connected!!!
+New gains [0.298436, 11.7865, 7.66425e-05] Index [0] error [1970.62]
+New potentials [0.0123165, 0.647695, 4.56904e-06] Sum potentials_ [0.660016]
+Connected!!!
+Connected!!!
+New gains [0.286119, 12.4342, 7.66425e-05] Index [1] error [1970.62]
+New potentials [0.0110848, 0.647695, 4.56904e-06] Sum potentials_ [0.658784]
+Connected!!!
+Connected!!!
+New gains [0.286119, 11.7865, 8.12115e-05] Index [2] error [1970.62]
+New potentials [0.0110848, 0.582925, 4.56904e-06] Sum potentials_ [0.594015]
+Connected!!!
+Connected!!!
+New gains [0.297204, 11.7865, 7.20734e-05] Index [0] error [1970.62]
+New potentials [0.0110848, 0.582925, 5.02595e-06] Sum potentials_ [0.594015]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.3695, 7.20734e-05] Index [1] error [1970.62]
+New potentials [0.0121933, 0.582925, 5.02595e-06] Sum potentials_ [0.595124]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.70994e-05] Index [2] error [1970.62]
+New potentials [0.0121933, 0.524633, 5.02595e-06] Sum potentials_ [0.536831]
+Connected!!!
+New gains [0.287228, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.0121933, 0.524633, 5.52854e-06] Sum potentials_ [0.536832]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.3112, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.010974, 0.524633, 5.52854e-06] Sum potentials_ [0.535612]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 8.26279e-05] Index [2] error [1790.64]
+New potentials [0.010974, 0.472169, 5.52854e-06] Sum potentials_ [0.483149]
+Connected!!!
+Connected!!!
+New gains [0.286008, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.010974, 0.472169, 4.97569e-06] Sum potentials_ [0.483148]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.2587, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00987659, 0.472169, 4.97569e-06] Sum potentials_ [0.482051]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 8.20751e-05] Index [2] error [1790.64]
+New potentials [0.00987659, 0.424953, 4.97569e-06] Sum potentials_ [0.434834]
+Connected!!!
+Connected!!!
+New gains [0.284911, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00987659, 0.424953, 4.47812e-06] Sum potentials_ [0.434834]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.2115, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00888893, 0.424953, 4.47812e-06] Sum potentials_ [0.433846]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 8.15775e-05] Index [2] error [1790.64]
+New potentials [0.00888893, 0.382457, 4.47812e-06] Sum potentials_ [0.391351]
+Connected!!!
+Connected!!!
+New gains [0.283923, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00888893, 0.382457, 4.03031e-06] Sum potentials_ [0.39135]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.169, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00800004, 0.382457, 4.03031e-06] Sum potentials_ [0.390461]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 8.11297e-05] Index [2] error [1790.64]
+New potentials [0.00800004, 0.344212, 4.03031e-06] Sum potentials_ [0.352216]
+Connected!!!
+Connected!!!
+New gains [0.283034, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00800004, 0.344212, 3.62728e-06] Sum potentials_ [0.352215]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.1308, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00720003, 0.344212, 3.62728e-06] Sum potentials_ [0.351415]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 8.07267e-05] Index [2] error [1790.64]
+New potentials [0.00720003, 0.30979, 3.62728e-06] Sum potentials_ [0.316994]
+Connected!!!
+Connected!!!
+New gains [0.282234, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00720003, 0.30979, 3.26455e-06] Sum potentials_ [0.316994]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.0963, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00648003, 0.30979, 3.26455e-06] Sum potentials_ [0.316274]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 8.03639e-05] Index [2] error [1790.64]
+New potentials [0.00648003, 0.278811, 3.26455e-06] Sum potentials_ [0.285295]
+Connected!!!
+Connected!!!
+New gains [0.281514, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00648003, 0.278811, 2.93809e-06] Sum potentials_ [0.285294]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.0654, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00583203, 0.278811, 2.93809e-06] Sum potentials_ [0.284646]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 8.00375e-05] Index [2] error [1790.64]
+New potentials [0.00583203, 0.25093, 2.93809e-06] Sum potentials_ [0.256765]
+Connected!!!
+Connected!!!
+New gains [0.280866, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00583203, 0.25093, 2.64428e-06] Sum potentials_ [0.256765]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.0375, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00524882, 0.25093, 2.64428e-06] Sum potentials_ [0.256182]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.97437e-05] Index [2] error [1790.64]
+New potentials [0.00524882, 0.225837, 2.64428e-06] Sum potentials_ [0.231089]
+Connected!!!
+Connected!!!
+New gains [0.280283, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00524882, 0.225837, 2.37986e-06] Sum potentials_ [0.231088]
+Connected!!!
+Connected!!!
+New gains [0.275034, 12.0124, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00472394, 0.225837, 2.37986e-06] Sum potentials_ [0.230564]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.94792e-05] Index [2] error [1790.64]
+New potentials [0.00472394, 0.203253, 2.37986e-06] Sum potentials_ [0.20798]
+Connected!!!
+Connected!!!
+New gains [0.279758, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00472394, 0.203253, 2.14187e-06] Sum potentials_ [0.20798]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.9898, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00425155, 0.203253, 2.14187e-06] Sum potentials_ [0.207507]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.92413e-05] Index [2] error [1790.64]
+New potentials [0.00425155, 0.182928, 2.14187e-06] Sum potentials_ [0.187182]
+Connected!!!
+Connected!!!
+New gains [0.279286, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00425155, 0.182928, 1.92768e-06] Sum potentials_ [0.187182]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.9695, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00382639, 0.182928, 1.92768e-06] Sum potentials_ [0.186756]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.90271e-05] Index [2] error [1790.64]
+New potentials [0.00382639, 0.164635, 1.92768e-06] Sum potentials_ [0.168464]
+Connected!!!
+Connected!!!
+New gains [0.278861, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00382639, 0.164635, 1.73491e-06] Sum potentials_ [0.168463]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.9512, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00344375, 0.164635, 1.73491e-06] Sum potentials_ [0.168081]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.88343e-05] Index [2] error [1790.64]
+New potentials [0.00344375, 0.148172, 1.73491e-06] Sum potentials_ [0.151617]
+Connected!!!
+Connected!!!
+New gains [0.278478, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00344375, 0.148172, 1.56142e-06] Sum potentials_ [0.151617]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.9347, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00309938, 0.148172, 1.56142e-06] Sum potentials_ [0.151273]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.86608e-05] Index [2] error [1790.64]
+New potentials [0.00309938, 0.133355, 1.56142e-06] Sum potentials_ [0.136456]
+Connected!!!
+Connected!!!
+New gains [0.278134, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00309938, 0.133355, 1.40528e-06] Sum potentials_ [0.136455]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.9199, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.00278944, 0.133355, 1.40528e-06] Sum potentials_ [0.136145]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.7865, 7.85047e-05] Index [2] error [1790.64]
+New potentials [0.00278944, 0.120019, 1.40528e-06] Sum potentials_ [0.12281]
+Connected!!!
+Connected!!!
+New gains [0.277824, 11.7865, 7.70994e-05] Index [0] error [1790.64]
+New potentials [0.00278944, 0.120019, 1.26475e-06] Sum potentials_ [0.12281]
+Connected!!!
+Connected!!!
+New gains [0.275034, 11.9066, 7.70994e-05] Index [1] error [1790.64]
+New potentials [0.0025105, 0.120019, 1.26475e-06] Sum potentials_ [0.122531]
+Connected!!!
+^C
+april@Electron:~/term2/CarND-PID-Control-Project/debug$
