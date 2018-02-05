@@ -4,18 +4,18 @@ Self-Driving Car Engineer Nanodegree Program
 ---
 ## Introduction
 
-In this project we revisit the lake race track from the Behavioral Cloning Project.This time, however, I implement a PID controller in C++ to maneuver the vehicle around the track!
+In this project we revisit the lake race track from the Behavioral Cloning Project. This time, however, I implement a PID controller in C++ to maneuver the vehicle around the track!
 
 The simulator provides the cross track error (CTE) and the velocity (mph) in order to compute the appropriate steering angle and velocity control of the car.
 The speed limit has been increased from 30 mph to 100 mph so the objective is to try to drive SAFELY as fast as possible! NOTE: There is no minimum speed to pass.
 
 ## Implementation
 
-The car steering PID controller follows the base implementation taught in class consiting of a proportional, integral, and derivative component.  It was coded in C++ and is located in the files ```PID.h``` and ```PID.cpp```.  The PID gains were tuned manually following well established tuning methods stated [here](https://robotics.stackexchange.com/questions/167/what-are-good-strategies-for-tuning-pid-loops).  Once the car could safely navigate around the track, a Twiddle algorithm, as shown in class, was then applied to improve upon it as it drives the total error to zero.
+The car steering PID controller follows the base implementation taught in class consisting of a proportional, integral, and derivative component.  It was coded in C++ and is located in the files ```PID.h``` and ```PID.cpp```.  The PID gains were tuned manually following well established tuning methods stated [here](https://robotics.stackexchange.com/questions/167/what-are-good-strategies-for-tuning-pid-loops).  Once the car could safely navigate around the track, a Twiddle algorithm, as shown in class, was then applied to improve upon it as it drives the total error to zero.
 
 ![alt text](./Term2PID.png "PID Steering Controller")
 
-The car throttle control was implemented with a PID controller as well.  The gains were manually tuned and the Twiddle algorithm applied to fine tune it.  Surprisingly, it settled on a controller that did not use the I term which resulted in a PD controller, a special case of the PID controller where the I term is set to zero.
+The car throttle control was implemented with a PID controller as well.  The gains were manually tuned and the Twiddle algorithm was applied to further fine tune it.  Surprisingly, it settled on a controller that did not use the I term which resulted in a PD controller. This is a special case of the PID controller where the I term is set to zero.
 
 See https://en.wikipedia.org/wiki/PID_controller for more information.
 
@@ -38,7 +38,7 @@ Here the line in blue shows the cross track error over time (steps). This is a P
 
 The effect of turning up the gain is quite dramatic and leads to larger occilations in the cross track error. This leads to an unstable condition and does not handle varying inputs very well.  A high proportional term makes the system more sensitive to error but becomes unbounded as error grows.  The effect is decreased response time, increased overshoot, decreased steady state error, and a degredation in stability.
 
-Lowering the P term too much can also have bad effects where the car will fail to counteract the error leading to it not being sensititve to changes in the road curvature. It does not applify the error like the very large proportional term above, but it will also fail to handle the corners and bends in the road.
+Lowering the P term too much can also have unwanted effects, such as the car failing to counteract the error which leads to it not being sensititve to changes in the road curvature. It does not amplify the error like the very large proportional term above, but it will also fail to handle the corners and bends in the road.
 
 
 ### Differential Effect
@@ -47,11 +47,11 @@ The effects of the differential term are emphasized in the plots below:
 
 ![alt text](./pid_0.07_0_0.12.png "PID 0.07_0_0.12")
 
-Here the derivative term works against the proportional term when the error term is changing rapidly. Therefore increasing the D term will necesstate a corresponding increase in the P term.  Here the D term helps with the oscillation in the P term but induces a steady state error in the cross track error but the controller is generally stable.
+Here the derivative term works against the proportional term when the error term is changing rapidly. Therefore increasing the D term will necessitate a corresponding increase in the P term.  Here the D term helps with the oscillation in the P term but induces a steady state offset in the cross track error but the controller is generally stable.
 
 ![alt text](./pid_0.07_0_1.png "PID 0.07_0_1")
 
-Increasing the D term too much causes the controller to go unstable as seen in plot above.  The effect is a decrease in overshoot, an increase in the time it takes to settle (ringing) as seen in the bell shape occilations.  The bells are growing over time which is sign that this D term will cause more instability over time.
+Increasing the D term too much causes the controller to go unstable as seen in the plot above.  The effect is a decrease in overshoot, an increase in the time it takes to settle (ringing) as seen in the bell shape occilations.  The bells are growing over time which is sign that this D term will cause more instability over time.
 
 ### Integral Effect
 
@@ -59,11 +59,11 @@ The effects of modifying the integral term are shown in the plots below:
 
 ![alt text](./pid_0.07_1e-4_0.12.png "PID 0.07_1e-4_0.12")
 
-Here is a fully tuned PID controller with an small I term applied.  The I term integrates the error over time and applies it to the control output.  Notice how the blue cross track error is now corrected to be the center of the plot.  This is because the I term reduces steady state error.  Since this an 'area' function, the term must be small or risk the controller becoming unstable.  This cumulative effect will reduce the steady state error but requires error on the opposite side of the graph to pull it back down to zero.
+Here is a fully tuned PID controller with an small I term applied.  The I term integrates the error over time and applies it to the control output.  Notice how the blue cross track error is now corrected to be the center of the plot.  This is because the I term reduces steady state error.  Since this is an 'area' function, the term must be small or risk the controller becoming unstable.  This cumulative effect will reduce the steady state error but requires error on the opposite side of the graph to pull it back down to zero.
 
 ![alt text](./pid_0.07_1e-1_0.12.png "PID 0.07_1e-1_0.12")
 
-Increasing the I term leads to unstability as seen in the above plot where the integral term is set to ```0.1```.  Here it can be seen that as the cross track error increases so does the I term. The effect of increasing the I term is a decrease in rise time, and increase in overshooting, and increase in the settling time, a decrease in steady state error and a degredation in stabilty.
+Increasing the I term leads to instability as seen in the above plot where the integral term is set to ```0.1```.  Here it can be seen that as the cross track error increases so does the I term. The effect of increasing the I term is a decrease in rise time, an increase in overshooting, an increase in the settling time, a decrease in steady state error and a degredation in stabilty.
 
 ### How the Final Hyperparameters Were Chosen
 
@@ -85,13 +85,13 @@ My version of the Twiddle algorithm lives in the PID class. It is turned on by s
 
 After using the Twiddle algorithm to find the final gains for the ```40 MPH``` speed.  I then used Twiddle to fine tune the throttle once again.  After this, I found I needed to run Twiddle once more on the steering controller to dial it in nicely.
 
-An issue I ran into early on in the process was twitchy turning responses.  It looked like the wheels were twitching back and forth extreamly fast while driving.  When I looked closer at the crosstack erro coming from the simulator itself, I noticed that after every new value, it would send 3 or more sensor readings of the same value.  This was causing the differential D term to fire once and then hold zero for a few updates and then fire again and so on.
+An issue I ran into early on in the process was twitchy turning responses.  It looked like the wheels were twitching back and forth extremely fast while driving.  When I looked closer at the crosstack error coming from the simulator itself, I noticed that after every new value it would send 3 or more repeated sensor readings of the same value.  This was causing the differential D term to fire once and then hold zero for a few updates and then fire again and so on.
 
-To fix this, I added a low pass filter to both the steering cross track error as wel as the velocity feedback.  This helped a lot with the control of the car and stopped the wheels from twitching all the time.
+To fix this, I added a low pass filter to both the steering cross track error as well as the velocity feedback.  This helped a lot with the control of the car and stopped the wheels from twitching all the time.
 
-Another issue I had was that a fully tuned PID controller would produce different results from run to run.  I had initially just used the steps as the time increment for the differential control.  This introduced variability becuase the updates did not always occur at the same time interval.  Using ```std::chrono::system_clock``` instead resulted in a big improvement in this phenomina.
+Another issue I had was that a fully tuned PID controller would produce different results from run to run.  I had initially just used the steps as the time increment for the differential control.  This introduced variability because the updates did not always occur at the same time interval.  Using ```std::chrono::system_clock``` instead resulted in a big improvement in this phenomena.
 
-After I had a controller tuned for 40 MPH, I decided to tune PID gains for each speed in the range ```40, 50, 60, 70, 80, and 90 MPH```.  I started the ```50 MPH``` with the same parameters from the previous speed, ```40 MPH```, and applied the Twiddle algorithm these until it could successfully complete a lap and assigned the vales for this new speed. I repeated this for each speed up to ```90 MPH```.  At ```90 MPH``` I found the Twiddle algorithm would no longer work as the car could never make the first sharp corner after the bridge.  It should be noted that using a low pass filter on the cross track error results in a time delay between the input and the control. It becomes slower to respond.  This works against tuning the controller for high speed driving.
+After I had a controller tuned for 40 MPH, I decided to tune PID gains for each speed in the range ```40, 50, 60, 70, 80, and 90 MPH```.  I started the ```50 MPH``` with the same parameters from the previous speed, ```40 MPH```, and applied the Twiddle algorithm until it could successfully complete a lap and assigned the PID values for this new speed. I repeated this for each speed up to ```90 MPH```.  At ```90 MPH``` I found the Twiddle algorithm would no longer work as the car could never make the first sharp corner after the bridge.  It should be noted that using a low pass filter on the cross track error results in a time delay between the input and the control and it becomes slower to respond.  This works against tuning the controller for high speed driving.
 
 In the end I was content to settle for ```80 MPH``` as the maximum speed I could attain safely.
 
