@@ -38,9 +38,9 @@ public:
   int max_steps_;            // maximum number of feedback updates (distance)
   int max_index_;            // max index to twiddle up to
   int best_step_; // largest number of updates achieved with this twiddle tune
-  std::chrono::_V2::system_clock::time_point
+  std::chrono::system_clock::time_point
       start_time_; // start time for the current run
-  std::chrono::_V2::system_clock::time_point
+  std::chrono::system_clock::time_point
       last_time_;         // the time of the last step
   std::ofstream log_fs_;  // contains run log and tuning results
   std::ofstream data_fs_; // error and pid control csv file for the run

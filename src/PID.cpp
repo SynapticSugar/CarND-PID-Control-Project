@@ -44,7 +44,7 @@ void PID::Init(double Kp, double Kd, double Ki, bool enableTwiddle,
 }
 
 pid::return_code PID::UpdateError(double cte, bool crash) {
-  std::chrono::_V2::system_clock::time_point this_time =
+  std::chrono::system_clock::time_point this_time =
       std::chrono::system_clock::now();
   std::chrono::duration<double> elapsed_seconds;
 
