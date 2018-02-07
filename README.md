@@ -93,7 +93,7 @@ Another issue I had was that a fully tuned PID controller would produce differen
 
 After I had a controller tuned for 40 MPH, I decided to tune PID gains for each speed in the range ```40, 50, 60, 70, 80, and 90 MPH```.  I started the ```50 MPH``` with the same parameters from the previous speed, ```40 MPH```, and applied the Twiddle algorithm until it could successfully complete a lap and assigned the PID values for this new speed. I repeated this for each speed up to ```90 MPH```.  At ```90 MPH``` I found the Twiddle algorithm would no longer work as the car could never make the first sharp corner after the bridge.  It should be noted that using a low pass filter on the cross track error results in a time delay between the input and the control and it becomes slower to respond.  This works against tuning the controller for high speed driving.
 
-In the end I was content to settle for ```80 MPH``` as the maximum speed I could attain safely.
+In the end I was content to settle for ```70 MPH``` as the maximum speed I could attain safely.
 
 ## Simulation Results
 
@@ -101,7 +101,7 @@ In the end I was content to settle for ```80 MPH``` as the maximum speed I could
 
 No tire may leave the drivable portion of the track surface. The car may not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle).
 
-Here are the results of running the simulator at the ```40 MPH``` setting and the ```80 MPH``` setting with both cars completing one lap of the lake course.
+Here are the results of running the simulator at the ```40 MPH``` setting and the ```70 MPH``` setting with both cars completing one lap of the lake course.
 
 ### 40 MPH
 
@@ -109,11 +109,15 @@ Here are the results of running the simulator at the ```40 MPH``` setting and th
 
 Here the cart is more or less centered in the lane and performs fairly well, avoiding sudden movements.  I would actually get into this car.
 
-### 80 MPH
+A longer 2 minute YouTube video is featured here: https://youtu.be/lMNJ5pqKrog
 
-![alt text](./80mph.gif "80 MPH")
+### 70 MPH
+
+![alt text](./70mph.gif "70 MPH")
 
 Here we see that there is some additional side to side movement as it negotiates the track.  The wheels do drive over the painted sections of the road during the turns but does not roll up onto the ledge.  This was the maximum speed I could attain with this controller. I would probably not like to get into this car at this speed!
+
+A longer 2 minute YouTube video is featured here: https://youtu.be/UnYobazwbhM
 
 ## Dependencies
 
