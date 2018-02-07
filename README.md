@@ -109,7 +109,7 @@ Here are the results of running the simulator at the ```40 MPH``` setting and th
 
 Here the cart is more or less centered in the lane and performs fairly well, avoiding sudden movements.  I would actually get into this car.
 
-A longer 2 minute YouTube video is featured here: https://youtu.be/lMNJ5pqKrog
+A longer 2 minute YouTube video is featured here: https://youtu.be/UnYobazwbhM
 
 ### 70 MPH
 
@@ -117,7 +117,7 @@ A longer 2 minute YouTube video is featured here: https://youtu.be/lMNJ5pqKrog
 
 Here we see that there is some additional side to side movement as it negotiates the track.  The wheels do drive over the painted sections of the road during the turns but does not roll up onto the ledge.  This was the maximum speed I could attain with this controller. I would probably not like to get into this car at this speed!
 
-A longer 2 minute YouTube video is featured here: https://youtu.be/UnYobazwbhM
+A longer 2 minute YouTube video is featured here: https://youtu.be/lMNJ5pqKrog
 
 ## Dependencies
 
@@ -150,7 +150,7 @@ There's an experimental patch for windows in this [PR](https://github.com/udacit
 2. Make a build directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
 4. Run it: `./pid`.
-5. Run it with some speed [40,50,60,70,80]: `./pid <speed>`. 
+5. Run it with some speed [40,50,60,70]: `./pid <speed>`. 
 6. Run it with Twiddle: `./pid <Kp> <Kd> <Ki> <speed>`.
 
 
